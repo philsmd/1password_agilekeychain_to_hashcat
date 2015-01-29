@@ -19,7 +19,7 @@ Software:
     cd 1password_agilekeychain_to_hashcat
 * Run it:  
     ./1password_agilekeychain_to_hashcat.pl encryptionKeys.js hashes.txt
-* Run oclHashcat:
+* Run oclHashcat:  
     ./oclHashcat64.bin -m 6600 -a 0 hashes.txt dict.txt
 
 
