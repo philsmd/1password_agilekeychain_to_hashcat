@@ -27,7 +27,7 @@ Software:
 
 The second command line argument, i.e. the output file, is not required.  
 If you do not specify any output file (or 2nd command line argument) the output will be printed to stdout.
-It is also possible to pipe or redirect the stdout of course.
+It is also possible to pipe or redirect the stdout of course.  
     ./1password_agilekeychain_to_hashcat.pl encryptionKeys.js >> existing_1password_hashes_file.txt
 
 # Hacking
