@@ -1,7 +1,7 @@
 # About
 
-The goal of this project is to convert the required data of a 1password agilekeychain encryptionKeys.js file to the hash format expected by oclHashcat.  
-The oclHashcat hash mode is -m 6600 = 1Password, Agile Keychain.  
+The goal of this project is to convert the required data of a 1password agilekeychain encryptionKeys.js file to the hash format expected by hashcat.  
+The hashcat hash mode is -m 6600 = 1Password, Agile Keychain.  
 Cloud Keychain (-m 8200 = 1Password, Cloud Keychain) conversion is currently not supported by this script.  
 Support for Cloud Keychain may be added later (if there is any interest) to this or an independent script.
 
@@ -19,7 +19,7 @@ Software:
     cd 1password_agilekeychain_to_hashcat
 * Run it:  
     ./1password_agilekeychain_to_hashcat.pl encryptionKeys.js hashes.txt
-* Run oclHashcat:  
+* Run hashcat:  
     ./oclHashcat64.bin -m 6600 -a 0 hashes.txt dict.txt
 
 
